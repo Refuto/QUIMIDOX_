@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIMIDOX: Cuidarte Sin Dañarte</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos personalizados para la fuente y la estética general */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Gris muy claro/casi blanco */
+        }
+        .text-quimidox {
+            color: #10b981; /* Verde esmeralda para énfasis */
+        }
+        .bg-quimidox {
+            background-color: #059669; /* Verde más oscuro para la cabecera */
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        /* Clase para las imágenes en el encabezado */
+        .header-logo {
+            width: 70px; /* Tamaño fijo para logos */
+            height: 70px;
+            object-fit: contain;
+            /* Filtro para hacerlas ligeramente más blancas y que contrasten con el fondo oscuro */
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Encabezado Principal -->
+    <header class="bg-quimidox shadow-lg">
+        <div class="max-w-4xl mx-auto p-4 sm:p-6 text-center">
+            <!-- Contenedor flexible para alinear logos y título -->
+            <div class="flex items-center justify-center space-x-4">
+                
+                <!-- Imagen 1 (Izquierda) -->
+                <img src="1000043285.jpg" alt="Logo de QUIMIDOX con productos de higiene" class="header-logo hidden sm:block">
+
+                <!-- Título Central -->
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+                    QUIMIDOX: CUIDARTE SIN DAÑARTE
+                </h1>
+
+                <!-- Imagen 2 (Derecha) -->
+                <img src="1000043280.png" alt="Diseño Cuidarte Sin Dañarte" class="header-logo hidden sm:block">
+            </div>
+
+            <!-- Título para dispositivos móviles (si las imágenes están ocultas) -->
+            <h1 class="text-3xl font-extrabold text-white sm:hidden mt-2">
+                 QUIMIDOX: CUIDARTE SIN DAÑARTE
+            </h1>
+
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-4xl mx-auto p-4 sm:p-8">
+        
+        <!-- Subtema y Resumen Introductorio -->
+        <section class="mb-8 p-6 bg-white rounded-xl card">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800 border-b-2 pb-2 border-quimidox">
+                Elementos dañinos en productos de higiene y limpieza
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Aunque las normativas permiten pequeñas cantidades de ciertas sustancias en productos cosméticos e higiénicos, el verdadero riesgo radica en el **efecto acumulativo y combinado** de estos elementos. La industria a menudo opta por ellos debido a su bajo costo o para mejorar características como la conservación, el color, la textura o el aroma. Esta exposición constante, que incluye productos de limpieza, puede provocar desde irritaciones y alergias hasta estar estrechamente ligada a la aparición de diversos tipos de cáncer y alteraciones hormonales y neurológicas.
+            </p>
+        </section>
+
+        <!-- Listado de Sustancias Nocivas -->
+        <section class="mb-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">
+                SUSTANCIAS TÓXICAS HABITUALES
+            </h3>
+            
+            <div class="space-y-4">
+                
+                <!-- Tarjetas para cada sustancia -->
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Aluminio y Siloxanos (Siliconas)</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Principalmente en desodorantes antitranspirantes. El aluminio se relaciona con el cáncer de mama, mientras que los siloxanos (o silicones) afectan el hígado y las funciones hormonales.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Parabenos y Formaldehído</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Usados como conservantes en champús, geles y cremas. Ambos son sustancias potencialmente o conocidas como cancerígenas. La UE y Canadá han prohibido el uso de formaldehído en cosméticos.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Triclosán</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Presente en jabones y pastas dentales. Sus efectos perjudiciales se centran en el sistema reproductor y las funciones musculares.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Perfumes y/o Fragancias Sintéticas</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Fabricados con derivados del petróleo que a menudo no se especifican en la etiqueta, actuando como tóxicos no declarados.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Etanolaminas (DEA, MEA, TEA) y Ftalatos</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Comunes en maquillaje, geles y productos de limpieza. Son altamente irritantes y pueden formar nitrosaminas cancerígenas. Los ftalatos (en suavizantes, etc.) también están ligados a problemas hormonales y cáncer.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Parafina (Aceites Minerales)</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Derivado del petróleo en cremas y vaselina. No es metabolizable, crea una capa que impide la correcta transpiración y no hidrata realmente.
+                    </p>
+                </article>
+
+                <article class="p-4 bg-white rounded-xl card border-l-4 border-red-400">
+                    <h4 class="font-semibold text-lg text-gray-800">Colorantes (CI-índex) y PEGs/PPG/Derivados -eth</h4>
+                    <p class="text-sm text-gray-600 mt-1">
+                        Los colorantes son minerales (óxidos, talco) que se acumulan por inhalación. Los glicoles (PEGs/PPG) se encuentran en jabones y champús y pueden dañar el sistema nervioso.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Fuente de Información -->
+        <section class="mb-10 text-center text-sm text-gray-500 italic p-4 bg-gray-100 rounded-lg">
+            información recabada de la OMS y de estudios de Environmental Science & Technology
+        </section>
+
+        <!-- Recomendaciones -->
+        <section class="mb-10 p-6 bg-green-50 rounded-xl card border-2 border-quimidox">
+            <h3 class="text-xl font-bold mb-4 text-green-700">
+                3 Recomendaciones para una Higiene Consciente
+            </h3>
+            <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                <li>
+                    **Lee la Etiqueta:** Es fundamental informarse sobre la materia prima. Aprende a identificar los nombres comunes y científicos de los ingredientes dañinos. Si la lista de ingredientes es muy larga o contiene nombres impronunciables, busca alternativas más simples y naturales.
+                </li>
+                <li>
+                    **Prioriza lo Mínimo y Natural:** Da preferencia a los productos con listas de ingredientes cortas, orgánicas o certificadas. Recuerda que menos es más, y que la naturaleza ofrece alternativas efectivas sin necesidad de aditivos sintéticos.
+                </li>
+                <li>
+                    **Reduce el Efecto Cóctel:** Ten en cuenta que todos los productos que usas a diario (cosméticos, higiene personal y limpieza del hogar) suman. Reducir la exposición en un área ayuda a disminuir la carga tóxica total que tu cuerpo debe procesar.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Instagram Link -->
+        <section class="text-center mb-8">
+            <a href="https://www.instagram.com/quimidox?igsh=MXE0cnowb2J3cGVzZg==" target="_blank" rel="noopener noreferrer" 
+               class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out shadow-lg transform hover:scale-105 active:scale-95">
+                Síguenos en nuestro Instagram
+            </a>
+        </section>
+
+        <!-- Hashtags -->
+        <section class="text-center text-sm font-medium text-quimidox tracking-wider">
+            <p>#CuidarteSinDañarte #HigieneConsciente #SinQuímicosTóxicos #EligeNatural #TuCuerpolmporta</p>
+        </section>
+
+    </main>
+</body>
+</html>
